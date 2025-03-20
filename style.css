@@ -1,3 +1,62 @@
+/* ----------------------------------------------------Header Yakup ------------------------------ */
+
+header h1{
+    font-weight: bold;
+    font-size: 56px;
+    font-family: var(--main-font);
+}
+
+header section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em 3em;
+}
+
+header hr {
+    width: 90%;
+    margin: auto;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin: 1em 0;
+}
+
+/* ----------------------------------------------------Main Yakup ------------------------------ */
+
+main h1{
+    width: 12%;
+    margin: auto;
+    font-weight: bold;
+    font-family: var(--main-font);
+    text-decoration: underline;
+}
+
+#categories{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#categories article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1em;
+}
+
+#categories article button{
+    background-color: var(--buttonColor);
+    color: var(--buttonTextColor);
+    width: 157px;
+    height: 70px;
+    border-radius: 44%;
+    transform: translateY(-60px);
+}
+
 * {
     box-sizing: border-box;
 }
