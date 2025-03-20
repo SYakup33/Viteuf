@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="_variables.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,7 +12,7 @@
     <title>Viteuf</title>
 </head>
 <body>
-    <header>
+    <!-- <header>
         <section>
             <img src="img/logo.png" alt="Logo de de Viteuf">
             <img src="img/userLog.png" alt="Logo connexion utilisateur">
@@ -24,20 +25,29 @@
             <a href="">Articles</a>
             <a href="">About us</a>
         </nav>
-    </header>
+    </header> -->
     <main>
-        <section id="landing">
-            <article>
-                    <img src="img/desktop_home.jpg" alt="photo d'accueil">
-            </article>
+        <section>
+            <div class="container">
+                <form action="" class="search-bar">
+                    <input type="text" placeholder="Pâtes carbo" name="q">
+                    <button type="submit">Rechercher</button>
+                </form>
+            </div>
         </section>
-
-
-
-
-
-
-
+        <hr id="separation">
+        <section id="plat-du-jour">
+            <div id="title">
+                <h3>Plat du Jour</h3>
+                <h1>Les Nouilles au Beurre de Sésame</h1>
+                <h2>By Turkish Monster</h2>
+            </div>
+            <div id="plat-pic">
+                <img src="img/nouille_pic.jpg" alt="Photo d'un plat de nouilles" id="nouille_pic">
+            </div>
+        </section>
+        <hr id="separation">
+        <section id="about"></section>
 
     </main>
 </body>
