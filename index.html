@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <head>
     <meta charset="UTF-8">
@@ -7,22 +9,19 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="_variables.css">
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
     <title>Viteuf</title>
 </head>
 
 <body>
- <main>
-        <section>
-            <!-- <a href=""><img src="img/logo.png" alt="Logo of Viteuf"></a> -->
-             <a href="index.html"><h1>Viteuf</h1></a>
+    <header>
+        <div>
+            <a href="index.html"><h1>Viteuf</h1></a>
             <a class="userConnection" href=""><img src="img/userLog.png" alt="Logo of user connection"></a>
-        </section>
-        <hr>
+        </div>
+    <hr>
         <nav>
             <a href="#">Plat du Jour</a>
             <a href="#">Recettes</a>
@@ -31,15 +30,26 @@
             <a href="#">About us</a>
         </nav>
     </header>
+
+    <div class="container">
+        <form action="anti-gaspi_page.html" class="search-bar">
+        <input type="text" placeholder="Pâtes carbo" name="q">
+        <button type="submit">Rechercher</button>
+        </form>
+    </div>
+    
+
     <main>
-        <h1>C'est quoi le mood?</h1>
-        <section id="categories">    
+       
+        <h1 id="categories-title">C'est quoi le mood?</h1>
+        
+        <div id="categories">    
             <article>
                 <img src="img/gaspi_pic.png" alt="image of anti waste food">
                 <a href="antiWaste.html"><button>Anti-Gaspi</button></a>
             </article>
             <article>
-                <img src="img/flemme_pic.png "alt="image of anti waste food">
+                <img src="img/flemme_pic.png " alt="image of anti waste food">
                 <button>La Flemme</button>
             </article>
             <article>
@@ -50,19 +60,21 @@
                 <img src="img/rapidos_pic.png" alt="image of anti waste food">
                 <button>Rapidos</button>
             </article>
-        </section>
-        <hr id="separation">
+        </div>
+        <hr class="separation">
         <section id="plat-du-jour">
-            <div id="title">
-                <h3>Plat du Jour</h3>
-                <h1>Les Nouilles au Beurre de Sésame</h1>
-                <h2>By Turkish Monster</h2>
-            </div>
+            <ul id="title">
+                <li id="cat">Plat du Jour</li>
+                <li id="dish">Les Nouilles au Beurre de Sésame</li>
+                <li id="author">By Turkish Monster</li>
+            </ul>
             <div id="plat-pic">
                 <img src="img/nouille_pic.jpg" alt="Photo d'un plat de nouilles" id="nouille_pic">
             </div>
         </section>
-        <hr id="separation">
+
+        <hr class="separation">
+
         <section id="about">
             <h1>Viteuf c'est quoi ?</h1>
             <p>
@@ -85,17 +97,20 @@
 
     </main>
     <footer>
-        <div class="nav_links_footer">
-            <a href="">Contact</a>
-            <a href="">À propos</a>
-            <a href="">Index des recettes</a>
-        </div>
+        <ul class="nav_links_footer">
+            <li><a href="">Contact</a></li>
+            <li><a href="">À propos</a></li>
+            <li><a href="">Index des recettes</a></li>
+        </ul>
+
         <div class="links_social_networks">
-            <a href="https://www.instagram.com/"><img src="img/insta_icon.png"></a>
-            <a href="https://www.facebook.com/?locale=fr_FR"><img src="img/fb_icon.png"></a>
-            <a href="https://www.tiktok.com/fr/"><img src="img/tik_icon.png"></a>
+            <a href="https://www.instagram.com/"><img src="img/insta_icon.png" alt="logo d'instagram"></a>
+            <a href="https://www.facebook.fr"><img src="img/fb_icon.png" alt="logo de facebook"></a>
+            <a href="https://www.tiktok.com/fr/"><img src="img/tik_icon.png" alt="logo de tiktok"></a>
         </div>
-        <img src="img/logo.png" alt="logo" id="logo">
+
+        <a href="index.html"><h1>Viteuf</h1></a>
+
         <p>Copyright<img src="img/cr_icon.png" alt="logo_copyright" id="logo_copyright">2025 Ça bosse fort</p>
     </footer>
 </body>

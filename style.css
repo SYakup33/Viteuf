@@ -1,4 +1,32 @@
-/* ----------------------------------------------------Header Yakup ------------------------------ */
+* {
+    box-sizing: border-box;
+}
+body {
+    max-width: 100vw;
+    margin: 0;
+    line-height: 1.6;
+    letter-spacing: .1rem;
+    background-color: var(--backgroundBody);
+}
+
+h1, h2{
+    font-family: var(--main-font);
+    font-weight: bold;
+}
+
+h3, p{
+    font-family: var(--secondary-font);
+}
+
+
+/* ----------------------------------------------------Header ------------------------------------------------------ */
+
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    background-color: var(--backgroundBody);
+}
 
 header h1{
     font-weight: bold;
@@ -6,7 +34,7 @@ header h1{
     font-family: var(--main-font);
 }
 
-header section {
+header div {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,17 +48,77 @@ header hr {
 
 header nav {
     display: flex;
-    justify-content: center;
     justify-content: space-evenly;
-    margin: 1em 0;
+    margin: 1em auto;
 }
 
-/* ----------------------------------------------------Main Yakup ------------------------------ */
+/* -------------------------home pic & searchbar------------------------------ */
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-image:url(img/home_pic.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
 
-main h1{
-    width: 12%;
-    margin: auto;
-    font-weight: bold;
+#landing-pic{
+    width: 100%;
+    height: auto;
+    max-height: 964px;
+}
+
+.search-bar{
+    width: 100%;
+    max-width: 700px;
+    background: var(--backgroundBody);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 60px;
+    border: 5px solid;
+    border-style: inset;
+    } input{
+        background: transparent;
+        flex: 1;
+        border: 0;
+        outline: none;
+        padding: 24px 20px;
+        font-size: 20px;
+        color: black;
+    } button{
+        border: 0;
+        border-radius: 60px;
+        width: 40%;
+        height: 90px;
+        background: var(--buttonColor);
+        font: var(--secondary-font);
+        color: var(--backgroundBody);
+        font-weight: bold;
+        font-size: 20px;
+        cursor: pointer;
+     &:hover{
+        background-color: var(--buttonColorHover)
+    } 
+     &:active{
+        background-color: var(--buttonColor);
+        box-shadow: 0 5px #666;
+        transform: translateX(4px);
+     }
+}
+
+::placeholder{
+    color: lightgray;
+}
+
+/* ---------------------------------------------------Categories ------------------------------ */
+
+#categories-title{
+    display: flex;
+    justify-content: center;
+    margin: 53px auto;
+    font-weight : bold;
     font-family: var(--main-font);
     text-decoration: underline;
 }
@@ -51,100 +139,40 @@ main h1{
 #categories article button{
     background-color: var(--buttonColor);
     color: var(--buttonTextColor);
-    width: 157px;
+    width: 210px;
     height: 70px;
-    border-radius: 44%;
+    border-radius: 25px;
     transform: translateY(-60px);
-}
+    &:hover{
+        background-color: var(--buttonColorHover)
+    } 
+     &:active{
+        background-color: Vvar(--buttonColor);
+        box-shadow: 0 5px #666;
+     }
 
-* {
-    box-sizing: border-box;
-}
-body {
-    margin: 0;
-    line-height: 1.6;
-    letter-spacing: .1rem;
-    background-color: var(--backgroundBody);
-}
-
-h1, h2{
-    font-family: var(--main-font);
-    font-weight: bold;
-}
-
-h3, p{
-    font-family: var(--secondary-font);
-}
-
-/* -------------------------home pic & searchbar------------------------------ */
-#landing-pic{
-    width: 100%;
-    height: auto;
-    max-height: 964px;
-}
-
-.container{
-    width: 100%;
-    min-height: 100vh;
-    padding: 5%;
-    background-image:url(img/home_pic.jpg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
- 
-}
-
-.search-bar{
-    width: 100%;
-    max-width: 700px;
-    background: var(--backgroundBody);
-    display: flex;
-    align-items: center;
-    border-radius: 60px;
-    border: 5px solid;
-    border-style: inset;
-  } input{
-    background: transparent;
-    flex: 1;
-    border: 0;
-    outline: none;
-    padding: 24px 20px;
-    font-size: 20px;
-    color: black;
-} button{
-    border: 0;
-    border-radius: 60px;
-    width: 40%;
-    height: 90px;
-    background: var(--buttonColor);
-    font: var(--secondary-font);
-    color: var(--backgroundBody);
-    font-weight: bold;
-    font-size: 20px;
-}
-
-::placeholder{
-    color: lightgray;
 }
 
 
 /* ------------------------section Plat du Jour---------------------------- */
 
 
-#separation{
+.separation{
     width: 60%;
     margin: 53px auto;
-
 }
 
 #plat-du-jour{
     margin-top: 53px;
+}
    
-} h1{
+#dish{
     font-size: 45px;
-} h2{
+}
+#author{
     font-size: 18px;
-} h3{
+}
+#cat{
     font-size: 16px;
     color: gray;
 }
@@ -153,6 +181,7 @@ h3, p{
     display: flex;
     flex-direction: column;
     transform: translate(165px);
+    max-width: 100%;
 }
 
 #plat-pic{
@@ -166,16 +195,21 @@ margin-top: 1em;
 #about{
     display: flex;
     flex-direction: column;
+    margin: 2em auto;
 }
 
 #about h1{
     margin: 20px auto;
+    text-decoration: underline;
 } p {
     text-align: left;
-    margin: 20px auto;
-} img{
+    margin: 2rem auto;
+} 
+#team-pic{
     margin: 15px auto;
 }
+
+/* ----------------------------FOOTER------------------------------------------------------------- */
 
 footer {
     background-color: var(--buttonColor);
@@ -195,27 +229,22 @@ footer a {
     justify-content: center;
 }
 
-footer .nav_links_footer {
+.nav_links_footer {
     padding: 50px 0px 60px 50px;
     line-height: 1.8rem;
     font-size: 1.2rem;
 }
 
-footer .links_social_networks {
+.links_social_networks {
     display: flex;
     justify-content: center;
     margin: auto;
     gap: 15px;
 }
 
-footer .links_social_networks a {
+.links_social_networks a {
     height: 50px;
     width: 50px;
-}
-
-footer #logo {
-    margin: auto;
-    padding: 10px 0px 90px 40px;
 }
 
 footer p {
@@ -224,8 +253,12 @@ footer p {
     margin: auto;
 }
 
-footer #logo_copyright {
+#logo_copyright {
     height: 10px;
     width: 10px;
     padding: 0px 5px 0px 5px;
+}
+
+footer h1{
+    padding-left: 3em
 }
