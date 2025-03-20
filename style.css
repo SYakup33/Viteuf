@@ -1,6 +1,6 @@
 /* ----------------------------------------------------Header Yakup ------------------------------ */
 
-header h1{
+header h1 {
     font-weight: bold;
     font-size: 56px;
     font-family: var(--main-font);
@@ -27,7 +27,7 @@ header nav {
 
 /* ----------------------------------------------------Main Yakup ------------------------------ */
 
-main h1{
+main h1 {
     width: 12%;
     margin: auto;
     font-weight: bold;
@@ -35,12 +35,12 @@ main h1{
     text-decoration: underline;
 }
 
-#categories{
+#categories {
     display: flex;
     justify-content: space-evenly;
 }
 
-#categories article{
+#categories article {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,7 +48,7 @@ main h1{
     margin: 1em;
 }
 
-#categories article button{
+#categories article button {
     background-color: var(--buttonColor);
     color: var(--buttonTextColor);
     width: 157px;
@@ -60,6 +60,7 @@ main h1{
 * {
     box-sizing: border-box;
 }
+
 body {
     margin: 0;
     line-height: 1.6;
@@ -67,34 +68,36 @@ body {
     background-color: var(--backgroundBody);
 }
 
-h1, h2{
+h1,
+h2 {
     font-family: var(--main-font);
     font-weight: bold;
 }
 
-h3, p{
+h3,
+p {
     font-family: var(--secondary-font);
 }
 
 /* -------------------------home pic & searchbar------------------------------ */
-#landing-pic{
+#landing-pic {
     width: 100%;
     height: auto;
     max-height: 964px;
 }
 
-.container{
+.container {
     width: 100%;
     min-height: 100vh;
     padding: 5%;
-    background-image:url(img/home_pic.jpg);
+    background-image: url(img/home_pic.jpg);
     display: flex;
     align-items: center;
     justify-content: center;
- 
+
 }
 
-.search-bar{
+.search-bar {
     width: 100%;
     max-width: 700px;
     background: var(--backgroundBody);
@@ -103,7 +106,9 @@ h3, p{
     border-radius: 60px;
     border: 5px solid;
     border-style: inset;
-  } input{
+}
+
+input {
     background: transparent;
     flex: 1;
     border: 0;
@@ -111,7 +116,9 @@ h3, p{
     padding: 24px 20px;
     font-size: 20px;
     color: black;
-} button{
+}
+
+button {
     border: 0;
     border-radius: 60px;
     width: 40%;
@@ -123,7 +130,7 @@ h3, p{
     font-size: 20px;
 }
 
-::placeholder{
+::placeholder {
     color: lightgray;
 }
 
@@ -131,49 +138,59 @@ h3, p{
 /* ------------------------section Plat du Jour---------------------------- */
 
 
-#separation{
+#separation {
     width: 60%;
     margin: 53px auto;
 
 }
 
-#plat-du-jour{
+#plat-du-jour {
     margin-top: 53px;
-   
-} h1{
+
+}
+
+h1 {
     font-size: 45px;
-} h2{
+}
+
+h2 {
     font-size: 18px;
-} h3{
+}
+
+h3 {
     font-size: 16px;
     color: gray;
 }
 
-#title{
+#title {
     display: flex;
     flex-direction: column;
     transform: translate(165px);
 }
 
-#plat-pic{
-display: flex;
-justify-content: center;
-margin-top: 1em;
+#plat-pic {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
 }
 
 /*-------------------------------SECTION ABOUT US--------------------------------------------- */
 
-#about{
+#about {
     display: flex;
     flex-direction: column;
 }
 
-#about h1{
+#about h1 {
     margin: 20px auto;
-} p {
+}
+
+p {
     text-align: left;
     margin: 20px auto;
-} img{
+}
+
+img {
     margin: 15px auto;
 }
 
@@ -228,4 +245,52 @@ footer #logo_copyright {
     height: 10px;
     width: 10px;
     padding: 0px 5px 0px 5px;
+}
+
+/* main anti-gaspi*/
+
+main #h1_anti-gaspi {
+    color: var(--buttonTextColor);
+    font-family: var(--main-font);
+    width: auto;
+    text-decoration: none;
+}
+
+main #anti-gaspi_main_pic {
+    display: flex;
+    background-image: url('img/image_anti_gaspi\(2\).jpg'), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background-size: cover;
+    width: 100%;
+    filter: brightness(70%);
+    height: 500px;
+    background-blend-mode: darken;
+
+}
+
+main #anti-gaspi_receipes_selection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 70px;
+    justify-content: center;
+    width: 100%;
+    padding: 70px 0px 70px 0px;
+}
+
+main #anti-gaspi_receipes_selection button {
+    height: 100%;
+    width: 70%;
+    margin: auto;
+    border-radius: 40px;
+}
+
+main #anti-gaspi_receipes_selection h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+main #anti-gaspi_receipes_selection img {
+    border-radius: 20px;
+    height: 70%;
+    width: 90%;
 }
