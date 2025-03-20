@@ -1,3 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    line-height: 1.6;
+    letter-spacing: .1rem;
+    background-color: var(--backgroundBody);
+}
+
+h1, h2{
+    font-family: var(--main-font);
+    font-weight: bold;
+}
+
+h3, p{
+    font-family: var(--secondary-font);
+}
+
+/* -------------------------home pic & searchbar------------------------------ */
+#landing-pic{
+    width: 100%;
+    height: auto;
+    max-height: 964px;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding: 5%;
+    background-image:url(img/home_pic.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+
+.search-bar{
+    width: 100%;
+    max-width: 700px;
+    background: var(--backgroundBody);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    border: 5px solid;
+    border-style: inset;
+  } input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 20px;
+    color: black;
+} button{
+    border: 0;
+    border-radius: 60px;
+    width: 40%;
+    height: 90px;
+    background: var(--buttonColor);
+    font: var(--secondary-font);
+    color: var(--backgroundBody);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+::placeholder{
+    color: lightgray;
+}
+
+
+/* ------------------------section Plat du Jour---------------------------- */
+
+
+#separation{
+    width: 60%;
+    margin: 53px auto;
+
+}
+
+#plat-du-jour{
+    margin-top: 53px;
+   
+} h1{
+    font-size: 45px;
+} h2{
+    font-size: 18px;
+} h3{
+    font-size: 16px;
+    color: gray;
+}
+
+#title{
+    display: flex;
+    flex-direction: column;
+    transform: translate(165px);
+}
+
+#plat-pic{
+display: flex;
+justify-content: center;
+margin-top: 1em;
+}
+
+/*-------------------------------SECTION ABOUT US--------------------------------------------- */
+
+#about{
+    display: flex;
+    flex-direction: column;
+}
+
+#about h1{
+    margin: 20px auto;
+} p {
+    text-align: left;
+    margin: 20px auto;
+} img{
+    margin: 15px auto;
+}
+
 footer {
     background-color: var(--buttonColor);
     display: grid;
