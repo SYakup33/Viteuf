@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
 }
+
 body {
     max-width: 100vw;
     margin: 0;
@@ -9,29 +10,29 @@ body {
     background-color: var(--backgroundBody);
 }
 
-h1{
+h1 {
     font-family: var(--main-font);
     font-weight: bold;
     font-size: 40px;
 }
 
-h2{
+h2 {
     font-family: var(--main-font);
     font-weight: bold;
 }
-h3{
+
+h3 {
     font-family: var(--secondary-font);
     font-size: larger;
 }
 
-nav a{
+nav a {
     font-size: larger;
 }
 
-
 /* ----------------------------------------------------Header ------------------------------------------------------ */
 
-header{
+header {
     width: 100%;
     position: fixed;
     z-index: 100;
@@ -70,20 +71,20 @@ header nav {
 .container{
     width: 100%;
     min-height: 100vh;
-    background-image:url(img/home_pic.jpg);
+    background-image: url(img/home_pic.jpg);
     display: flex;
     align-items: center;
     justify-content: center;
- 
+
 }
 
-#landing-pic{
+#landing-pic {
     width: 100%;
     height: auto;
     max-height: 964px;
 }
 
-.search-bar{
+.search-bar {
     width: 100%;
     max-width: 700px;
     background: var(--backgroundBody);
@@ -94,56 +95,62 @@ header nav {
     /* border: 5px solid;
     border-style: inset; mis en com en cas de retour en arrière du client*/
     margin-top: 11em;
-    } input{
-        background: transparent;
-        flex: 1;
-        border: 0;
-        outline: none;
-        padding: 24px 20px;
-        font-size: 20px;
-        color: black;
-    } button{
-        border: 0;
-        border-radius: 60px;
-        width: 40%;
-        height: 90px;
-        background: var(--buttonColor);
-        font: var(--secondary-font);
-        color: var(--backgroundBody);
-        font-weight: bold;
-        font-size: 20px;
-        cursor: pointer;
-     &:hover{
+}
+
+input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 20px;
+    color: black;
+}
+
+button {
+    border: 0;
+    border-radius: 60px;
+    width: 40%;
+    height: 90px;
+    background: var(--buttonColor);
+    font: var(--secondary-font);
+    color: var(--backgroundBody);
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+
+    &:hover {
         background-color: var(--buttonColorHover)
-    } 
-     &:active{
+    }
+
+    &:active {
         background-color: var(--buttonColor);
         box-shadow: 0 5px #666;
         transform: translateX(4px);
-     }
+    }
 }
 
-::placeholder{
+::placeholder {
     color: lightgray;
 }
 
 /* ---------------------------------------------------Categories ------------------------------ */
 
-main>h1{
+main>h1 {
     display: flex;
     justify-content: center;
     margin: 53px auto;
-    font-weight : bold;
+    font-weight: bold;
     font-family: var(--main-font);
     text-decoration: underline;
 }
 
-#categories{
+#categories {
     display: flex;
     justify-content: space-evenly;
 }
 
-#categories article{
+#categories article {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -151,20 +158,22 @@ main>h1{
     margin: 1em;
 }
 
-#categories article button{
+#categories article button {
     background-color: var(--buttonColor);
     color: var(--buttonTextColor);
     width: 210px;
     height: 70px;
     border-radius: 25px;
     transform: translateY(-60px);
-    &:hover{
+
+    &:hover {
         background-color: var(--buttonColorHover)
-    } 
-     &:active{
+    }
+
+    &:active {
         background-color: Vvar(--buttonColor);
         box-shadow: 0 5px #666;
-     }
+    }
 
 }
 
@@ -172,30 +181,33 @@ main>h1{
 /* ------------------------section Plat du Jour---------------------------- */
 
 
-.separation{
+.separation {
     width: 60%;
     margin: 53px auto;
 }
 
-#plat-du-jour{
+#plat-du-jour {
     margin-top: 53px;
     display: flex;
     flex-direction: column;
     margin: 0 10vw;
     width: 40%;
 }
-   
-#dish{
+
+#dish {
     font-size: 45px;
 }
-#author{
+
+#author {
     font-size: 18px;
 }
-#cat{
+
+#cat {
     font-size: 16px;
     color: gray;
 }
-#nouille_pic{
+
+#nouille_pic {
     margin-top: 2em;
     width: 100vw;
 
@@ -203,23 +215,26 @@ main>h1{
 
 /*-------------------------------SECTION ABOUT US--------------------------------------------- */
 
-#about{
+#about {
     display: flex;
     flex-direction: column;
     margin: 2em auto;
 }
 
-#about h1{
+#about h1 {
     margin: 20px auto;
     text-decoration: underline;
-} p {
+}
+
+p {
     font-family: var(--secondary-font);
     font-size: larger;
     text-align: left;
     margin: 2rem auto;
     max-width: 90ch;
-} 
-#team-pic{
+}
+
+#team-pic {
     width: 40%;
     margin: 15px auto;
 }
@@ -267,7 +282,7 @@ footer a {
     width: 50px;
 }
 
-.social_logo:hover{
+.social_logo:hover {
     transform: scale(1.1);
 }
 
@@ -278,11 +293,11 @@ footer p {
 }
 
 #logo_copyright {
-   width: 1.5em;
+    width: 1.5em;
     padding: 0px 5px;
 }
 
-footer h1{
+footer h1 {
     padding-left: 3em
 }
 
