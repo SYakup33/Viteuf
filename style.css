@@ -27,6 +27,8 @@ h3{
 nav a{
     font-size: larger;
 }
+
+
 /* ----------------------------------------------------Header ------------------------------------------------------ */
 
 header{
@@ -38,16 +40,18 @@ header{
 }
 
 header h1{
-    font-weight: bold;
     font-size: 56px;
-    font-family: var(--main-font);
 }
 
-header div {
+#logobar{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 1em 3em;
+}
+
+#viteuf_logo{
+    width: 10em;
 }
 
 header hr {
@@ -62,6 +66,7 @@ header nav {
 }
 
 /* -------------------------home pic & searchbar------------------------------ */
+
 .container{
     width: 100%;
     min-height: 100vh;
@@ -86,8 +91,8 @@ header nav {
     align-items: center;
     justify-content: center;
     border-radius: 60px;
-    border: 5px solid;
-    border-style: inset;
+    /* border: 5px solid;
+    border-style: inset; mis en com en cas de retour en arrière du client*/
     margin-top: 11em;
     } input{
         background: transparent;
@@ -192,6 +197,8 @@ main>h1{
 }
 #nouille_pic{
     margin-top: 2em;
+    width: 100vw;
+
 }
 
 /*-------------------------------SECTION ABOUT US--------------------------------------------- */
@@ -227,6 +234,7 @@ footer {
     padding-top: 80px;
     padding-bottom: 5px;
     font-family: var(--secondary-font);
+    height: 50%;
 }
 
 footer a {
@@ -241,7 +249,9 @@ footer a {
     padding: 50px 0px 60px 50px;
     line-height: 1.8rem;
     font-size: 1.2rem;
-} li:hover{
+} 
+
+.nav_links_footer li:hover{
     font-weight: bold;
 }
 
@@ -275,3 +285,5 @@ footer p {
 footer h1{
     padding-left: 3em
 }
+
+

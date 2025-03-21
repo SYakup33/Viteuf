@@ -1,0 +1,47 @@
+
+main #h1_anti-gaspi {
+    color: var(--buttonTextColor);
+    font-family: var(--main-font);
+    width: auto;
+    text-decoration: none;
+}
+
+main #anti-gaspi_main_pic {
+    display: flex;
+    background-image: url('img/image_anti_gaspi\(2\).jpg'), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background-size: cover;
+    width: 100%;
+    filter: brightness(70%);
+    height: 500px;
+    background-blend-mode: darken;
+
+}
+
+main #anti-gaspi_receipes_selection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 70px;
+    justify-content: center;
+    width: 100%;
+    padding: 70px 0px 70px 0px;
+}
+
+main #anti-gaspi_receipes_selection button {
+    height: 100%;
+    width: 70%;
+    margin: auto;
+    border-radius: 40px;
+}
+
+main #anti-gaspi_receipes_selection h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+main #anti-gaspi_receipes_selection img {
+    border-radius: 20px;
+    height: 70%;
+    width: 90%;
+
+}
