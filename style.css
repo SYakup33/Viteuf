@@ -9,16 +9,24 @@ body {
     background-color: var(--backgroundBody);
 }
 
-h1, h2{
+h1{
+    font-family: var(--main-font);
+    font-weight: bold;
+    font-size: 40px;
+}
+
+h2{
     font-family: var(--main-font);
     font-weight: bold;
 }
-
-h3, p{
+h3{
     font-family: var(--secondary-font);
+    font-size: larger;
 }
 
-
+nav a{
+    font-size: larger;
+}
 /* ----------------------------------------------------Header ------------------------------------------------------ */
 
 header{
@@ -26,6 +34,7 @@ header{
     position: fixed;
     z-index: 100;
     background-color: var(--backgroundBody);
+    border-bottom: 1px solid black;
 }
 
 header h1{
@@ -79,6 +88,7 @@ header nav {
     border-radius: 60px;
     border: 5px solid;
     border-style: inset;
+    margin-top: 11em;
     } input{
         background: transparent;
         flex: 1;
@@ -114,7 +124,7 @@ header nav {
 
 /* ---------------------------------------------------Categories ------------------------------ */
 
-#categories-title{
+main>h1{
     display: flex;
     justify-content: center;
     margin: 53px auto;
@@ -164,6 +174,10 @@ header nav {
 
 #plat-du-jour{
     margin-top: 53px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 10vw;
+    width: 40%;
 }
    
 #dish{
@@ -176,18 +190,8 @@ header nav {
     font-size: 16px;
     color: gray;
 }
-
-#title{
-    display: flex;
-    flex-direction: column;
-    transform: translate(165px);
-    max-width: 100%;
-}
-
-#plat-pic{
-display: flex;
-justify-content: center;
-margin-top: 1em;
+#nouille_pic{
+    margin-top: 2em;
 }
 
 /*-------------------------------SECTION ABOUT US--------------------------------------------- */
@@ -202,10 +206,14 @@ margin-top: 1em;
     margin: 20px auto;
     text-decoration: underline;
 } p {
+    font-family: var(--secondary-font);
+    font-size: larger;
     text-align: left;
     margin: 2rem auto;
+    max-width: 90ch;
 } 
 #team-pic{
+    width: 40%;
     margin: 15px auto;
 }
 
@@ -233,6 +241,8 @@ footer a {
     padding: 50px 0px 60px 50px;
     line-height: 1.8rem;
     font-size: 1.2rem;
+} li:hover{
+    font-weight: bold;
 }
 
 .links_social_networks {
@@ -247,6 +257,10 @@ footer a {
     width: 50px;
 }
 
+.social_logo:hover{
+    transform: scale(1.1);
+}
+
 footer p {
     grid-column: 1/4;
     text-align: center;
@@ -254,9 +268,8 @@ footer p {
 }
 
 #logo_copyright {
-    height: 10px;
-    width: 10px;
-    padding: 0px 5px 0px 5px;
+   width: 1.5em;
+    padding: 0px 5px;
 }
 
 footer h1{
