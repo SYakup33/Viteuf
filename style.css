@@ -344,11 +344,10 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 2fr 1fr;
-    padding-top: 80px;
+    padding-top: 60px;
     padding-bottom: 5px;
     font-family: var(--secondary-font);
-    height: 50%;
-    margin-top: 10em;
+    height: 40vh;
 }
 
 footer a {

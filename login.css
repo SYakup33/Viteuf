@@ -1,0 +1,51 @@
+main {
+    margin: auto;
+    width: 70%;
+    height: 105vh;
+    padding: 60px 0px 0px 0px;
+}
+
+main input {
+    background-color: var(--buttonTextColor);
+    border-radius: 20px;
+}
+
+main h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+    gap: 20px;
+    padding-bottom: 30px;
+    font-size: 1.2rem;
+}
+
+main form #button_connexion {
+    width: 200px;
+    background-color: var(--buttonColor);
+    color: var(--buttonTextColor);
+    font-weight: 700;
+    margin: auto;
+}
+
+main a {
+    display: block;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+main button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 10vh;
+    width: 200px;
+}

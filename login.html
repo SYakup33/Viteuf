@@ -1,18 +1,25 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="fr">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Le blog food pour toutes les recettes faciles et gourmandes à préparer pour le midi">
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="_variables.css">
-    <link rel="stylesheet" href="antigaspi.css">
+    <link rel="stylesheet" href="login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="antigaspi_smallscreen.css" media="screen and (max-width: 992px)">
-    <title>Viteuf</title>
+    <link rel="stylesheet" href="login_smallscreen.css" media="screen and (max-width: 992px)">
+    <link rel="icon" type="image/x-icon" href="img/Viteuf_favicon.png">
+    <title>Viteuf -- Les Recettes du Midi</title>
 </head>
 
 <body>
@@ -22,7 +29,7 @@
                 <h1>Viteuf</h1>
             </a>
             <a href="index.html"><img src="img/Viteuf_logo.png" alt="logo de Viteuf" id="viteuf_logo"></a>
-            <a href="login.html"><img src="img/userLog.png" alt="user connection" class="userConnection"></a>
+            <a href=""><img src="img/userLog.png" alt="user connection" class="userConnection"></a>
         </div>
         <hr>
         <nav>
@@ -33,34 +40,22 @@
             <a href="#">About us</a>
         </nav>
     </header>
-    <main>
-        <section id="anti-gaspi_main_pic">
-            <h1 id="h1_anti-gaspi">Anti-gaspi</h1>
 
-        </section>
-        <section id="anti-gaspi_receipes_selection">
-            <button>
-                <img src="img/poke_bowl.jpg" alt="img_poke_bowl" id="img_button_poke_bowl">
-                <h2 id="h2_poke_bowl">Poke bowl aux restes de riz</h2>
-            </button>
-            <button>
-                <img src="img/tarte_aux_tomates.jpg" alt="img_tarte_aux_tomates">
-                <h2>Tarte aux tomates abîmées</h2>
-            </button>
-            <button>
-                <img src="img/croquettes_legumes.jpeg" alt="img_croquettes_legumes">
-                <h2>Croquettes de légumes</h2>
-            </button>
-            <button>
-                <img src="img/croque_monsieur.jpg" alt="img_croque_monsieur">
-                <h2>Croque monsieur aux restes de jambon</h2>
-            </button>
-            <button>
-                <img src="img/caesar_salad.jpg" alt="img_salade_caesar">
-                <h2>Salade césar aux restes de poulet</h2>
-            </button>
-        </section>
+    <main>
+        <h2>Accéder à mon compte</h2>
+        <form action="" method="post">
+            <label for="email" >Adresse e-mail :</label>
+            <input type="email" id="email" name="email" placeholder="jean.dupont@hotmail.com" required>
+            <br>
+            <label for="password">Mot de passe :</label>
+            <input type="password" id="password" name="password" placeholder="Mot de passe" required>
+            <br>
+            <input type="submit" value="Se connecter" id="button_connexion">
+        </form>
+        <a href="">Mot de passe oublié ?</a>
+        <button>Créer un compte</button>
     </main>
+
     <footer>
         <ul class="nav_links_footer">
             <li><a href="">Contact</a></li>
@@ -72,8 +67,7 @@
             <a href="https://www.instagram.com/"><img src="img/insta_icon.png" alt="logo d'instagram"
                     class="social_logo"></a>
             <a href="https://www.facebook.fr"><img src="img/fb_icon.png" alt="logo de facebook" class="social_logo"></a>
-            <a href="https://www.tiktok.com/fr/"><img src="img/tik_icon.png" alt="logo de tiktok"
-                    class="social_logo"></a>
+            <a href="https://www.tiktok.com/fr/"><img src="img/tik_icon.png" alt="logo de tiktok"></a>
         </div>
 
         <a href="index.html">
