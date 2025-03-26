@@ -11,31 +11,45 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="_variables.css">
+    <link rel="stylesheet"  href="indexsmallscreen.css" media="screen and (max-width: 992px)">
+    <link rel="stylesheet" href="indexbigscreen.css" media="screen and (min-width: 992px)">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
-        rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="img/Viteuf_favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chango&family=Dela+Gothic+One&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chango&family=Dela+Gothic+One&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">    <link rel="icon" type="image/x-icon" href="img/Viteuf_favicon.png">
     <title>Viteuf -- Les Recettes du Midi</title>
 </head>
 
 <body>
     <header>
         <div id="logobar">
-            <a href="index.html">
-                <h1>Viteuf</h1>
-            </a>
+            <nav class="burger_menu">
+                <div class="menu-toggle" id="mobile-menu">
+                    ☰
+                </div>
+                <ul class="nav-list">
+                    <li><a href="#">Recettes</a></li>
+                    <li><a href="recipe_of_the_day.html">Plat du Jour</a></li>
+                    <li><a href="anti-gaspi_page.html">Catégories</a></li>
+                    <li><a href="#">Articles</a></li>
+                    <li><a href="about.html">About us</a></li>
+                </ul>
+            </nav>
+            <a href="index.html"><h1>Viteuf</h1></a>
             <a href="index.html"><img src="img/Viteuf_logo.png" alt="logo de Viteuf" id="viteuf_logo"></a>
-            <a href="login.html"><img src="img/userLog.png" alt="user connection" class="userConnection"></a>
+            <a href=""><img src="img/userLog.png" alt="user connection" class="userConnection" ></a>
+            
         </div>
-        <hr>
+        
+    <hr>
         <nav>
-            <a href="#">Plat du Jour</a>
+            <a href="recipe_of_the_day.html">Plat du Jour</a>
             <a href="#">Recettes</a>
-            <a href="#">Catégories</a>
+            <a href="anti-gaspi_page.html">Catégories</a>
             <a href="#">Articles</a>
-            <a href="#">About us</a>
+            <a href="about.html">About us</a>
         </nav>
     </header>
 
@@ -44,17 +58,33 @@
             <input type="text" placeholder="Pâtes carbo" name="q">
             <button type="submit">Rechercher</button>
         </form>
-    </div>
 
+        <form action="anti-gaspi_page.html" class="small-search-bar">
+            <input type="text" placeholder="Pâtes carbo" name="q">
+            <button type="submit"><img src="img/mag_icon.png" alt="image d'une loupe" class="loupe"></button>
+        </form>
+    </div>
+    
+    <hr class="separation">
+        <section id="plat-du-jour">
+            <ul id="title">
+                <li id="cat">Plat du Jour</li>
+                <li id="dish">Les Nouilles au Beurre de Sésame</li>
+                <li id="author">By Turkish Monster</li>
+            </ul>
+            <div id="plat-pic">
+                <img src="img/nouille_pic.jpg" alt="Photo d'un plat de nouilles" id="nouille_pic">
+            </div>
+        </section>
 
     <main>
-
-        <h1>C'est quoi le mood?</h1>
-
-        <div id="categories">
+       
+        <h1 id="mood">C'est quoi le mood?</h1>
+        
+        <div id="categories">    
             <article>
                 <img src="img/gaspi_pic.png" alt="image of anti waste food">
-                <a href="antiWaste.html"><button>Anti-Gaspi</button></a>
+                <a href="anti-gaspi_page.html"><button>Anti-Gaspi</button></a>
             </article>
             <article>
                 <img src="img/flemme_pic.png " alt="image of anti waste food">
@@ -69,54 +99,97 @@
                 <button>Rapidos</button>
             </article>
         </div>
-        <hr class="separation">
-        <section id="plat-du-jour">
-            <ul id="title">
-                <li id="cat">Plat du Jour</li>
-                <li id="dish">Les Nouilles au Beurre de Sésame</li>
-                <li id="author">By Turkish Monster</li>
-            </ul>
-            <div id="plat-pic">
-                <img src="img/nouille_pic.jpg" alt="Photo d'un plat de nouilles" id="nouille_pic">
+
+        <div class="slideshow-container">
+            <div class="mySlides fade" id="antigaspislide">
+              <a href="anti-gaspi_page.html"><img src="img/gaspi_pic.png" alt="image of anti waste food"></a>
             </div>
+          
+            <div class="mySlides fade">
+                <img src="img/flemme_pic.png" alt="image of tartines">
+            </div>
+          
+            <div class="mySlides fade">
+                <img src="img/asian_pic.png" alt="image of asian food">
+            </div>
+          
+            <div class="mySlides fade">
+                <img src="img/rapidos_pic.png" alt="image of quick food">
+              </div>
+        
+        
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+          <br>
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+          </div>        
+
+        <hr class="separation" >
+
+        <section id="about_what">
+            <h1 id="first-title">Viteuf c'est quoi ?</h1>
+            <p id="desc1">
+                <strong>Viteuf</strong>, c'est le concept <strong>ultra-pratique</strong> pour tous les gourmands pressés ! 🌟
+                Simple comme un plat de coquillettes, notre idée est de vous proposer des recettes du quotidien, <strong>faciles</strong> à réaliser, sans chichis, mais toujours savoureuses. 
+            </p>
+            <p id="desc2">        
+                Que vous soyez en quête d'un repas express après une longue journée, en pleine panne d'inspiration culinaire, ou désireux d'épater vos collègues avec un déjeuner fait maison, <br> <strong>Viteuf</strong> a la solution pour vous! 
+                Des plats <strong>rapides</strong>, accessibles et gourmands : voilà notre promesse. 
+            </p>    
+            <p id="desc3">
+                Plus besoin de passer des heures en cuisine, on vous <strong>simplifie</strong> la vie avec des recettes délicieuses et inratables.
+                Alors, prêt à réveiller le chef qui sommeille en vous, sans y passer la journée ? <br>🍽️🔥
+            </p>
         </section>
+        <section class="about_what_slider">
+            <h1 id="first-title">Viteuf c'est quoi ?</h1>
 
-        <hr class="separation">
-
-        <section id="about">
-            <h1>Viteuf c'est quoi ?</h1>
-            <p>
-                <strong>Viteuf</strong>, c'est le concept <strong>ultra-pratique</strong> pour tous les gourmands
-                pressés ! 🌟 <br>
-                Simple comme un plat de coquillettes, notre idée est de vous proposer des recettes du quotidien,
-                <strong>faciles</strong> à réaliser, sans chichis, mais toujours savoureuses. Que vous soyez en quête
-                d'un repas express après une longue journée, en pleine panne d'inspiration culinaire, ou désireux
-                d'épater vos collègues avec un déjeuner fait maison, <strong>Viteuf</strong> a la solution pour vous !
-                <br>
-                Des plats <strong>rapides</strong>, accessibles et gourmands : voilà notre promesse. Plus besoin de
-                passer des heures en cuisine, on vous <strong>simplifie</strong> la vie avec des recettes délicieuses et
-                inratables. <br>
-                Alors, prêt à réveiller le chef qui sommeille en vous, sans y passer la journée ? 🍽️🔥
+            <p class="slider_card">
+                <strong>Viteuf</strong>, c'est le concept <strong>ultra-pratique</strong> pour tous les gourmands pressés ! 🌟
+                Simple comme un plat de coquillettes, notre idée est de vous proposer des recettes du quotidien, <strong>faciles</strong> à réaliser, sans chichis, mais toujours savoureuses. 
+            </p>
+            <p class="slider_card">
+                Que vous soyez en quête d'un repas express après une longue journée, en pleine panne d'inspiration culinaire, ou désireux d'épater vos collègues avec un déjeuner fait maison, <br> <strong>Viteuf</strong> a la solution pour vous! 
+                Des plats <strong>rapides</strong>, accessibles et gourmands : voilà notre promesse.  
+            </p>
+            <p class="slider_card">
+                Plus besoin de passer des heures en cuisine, on vous <strong>simplifie</strong> la vie avec des recettes délicieuses et inratables.
+                Alors, prêt à réveiller le chef qui sommeille en vous, sans y passer la journée ? <br>🍽️🔥
             </p>
 
-            <h1>Viteuf c'est qui ?</h1>
-            <img src="img/about_us_pic.webp" alt="Photo de l'équipe" id="team-pic">
-            <p>
-                <strong>Viteuf</strong>, c'est la rencontre de trois passionés de cuisine aux parcours différents réunis
-                autour leur amour de la bonne bouffe. <br>
-                On ne présente plus le grand <strong>Turkish Monster</strong> ! Le gastronome fervent supporter du
-                Galatasaray utilise sa fine connaissance des saveurs de la cuisine turque pour <strong>remixer</strong>
-                les grand classiques. <br>
-                À ses côtés, <strong>Thomas Prime</strong> adepte de repas simples mais réconfortants, use de son
-                expérience des grandes tablées pour proposer des recettes pleines de <strong>joie de vivre</strong> !
-                Attention à la ligne ; <br>
-                Enfin <strong>Figmon</strong>, fin connaisseur des accords de saveurs, apporte une touche d'originalité
-                en intégrant subtilement son expérience du monde brassicole à ses recettes originales. <br>
+            <a class="what_prev" onclick="plusOtherSlides(-1)">&#10094;</a>
+            <a class="what_next" onclick="plusOtherSlides(1)">&#10095;</a>
+           
+        </section>
+
+        <section id="about_who">    
+           <h1 id="second-title">Viteuf c'est qui ?</h1>
+             <img src="img/about_us_pic.webp" alt="Photo de l'équipe" id="team-pic">
+           
+            <p id="p1">
+                On ne présente plus le grand <strong>Turkish Monster</strong> ! Le gastronome fervent supporter du Galatasaray utilise sa fine connaissance des saveurs de la cuisine turque pour <strong>remixer</strong> les grand classiques.
+            </p> 
+            <p id="p2">   
+                À ses côtés, <strong>Thomas Prime</strong> adepte de repas simples mais réconfortants, use de son expérience des grandes tablées pour proposer des recettes pleines de <strong>joie de vivre</strong> ! Attention à la ligne !
+            </p>
+            <p id="p3">
+                Enfin  <strong>Figmon</strong>,  fin connaisseur des accords de saveurs, apporte une touche d'originalité en intégrant subtilement son expérience du monde brassicole à ses recettes originales.
                 Ensemble, ils réinventent ta pause déj avec <strong>créativité et simplicité</strong>.
-            </p>
+            </p> 
+        </div>
         </section>
-
+        <section id="about_who_smallscreen">
+            <h1 id="second-title">Viteuf c'est qui ?</h1>
+             <img src="img/about_us_pic.webp" alt="Photo de l'équipe" id="team-pic">
+             <p>découvrez <a href="about.html"><strong>l'équipe</strong></a> !</p>
+        </section>
     </main>
+
     <footer>
         <ul class="nav_links_footer">
             <li><a href="">Contact</a></li>
@@ -128,7 +201,7 @@
             <a href="https://www.instagram.com/"><img src="img/insta_icon.png" alt="logo d'instagram"
                     class="social_logo"></a>
             <a href="https://www.facebook.fr"><img src="img/fb_icon.png" alt="logo de facebook" class="social_logo"></a>
-            <a href="https://www.tiktok.com/fr/"><img src="img/tik_icon.png" alt="logo de tiktok"></a>
+            <a href="https://www.tiktok.com/fr/"><img src="img/tik_icon.png" alt="logo de tiktok" class="social_logo"></a>
         </div>
 
         <a href="index.html">
@@ -138,6 +211,8 @@
         <p>Copyright<img src="img/cr_icon.png" alt="copyright" id="logo_copyright">2025 Ça bosse fort</p>
 
     </footer>
+    <script src="carousel.js"></script>
+    
 </body>
 
 </html>
