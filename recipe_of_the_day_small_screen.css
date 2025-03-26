@@ -1,9 +1,74 @@
-body {
-    margin: auto;
+header nav,
+  hr,
+  .userConnection,
+   .search-bar,
+    #categories,
+      #about_what,
+       #about_who,
+       .nav_links_footer{
+    display: none
 }
-header{
-    display: none;
-}
+
+#logobar{
+    flex-direction: column-reverse;
+ }
+ #viteuf_logo{
+     margin-right: 0;
+ }
+ .container{
+     min-height: 50vh;
+ }
+ .small-search-bar{
+     width: 100%;
+     max-width: 345px;
+     background: var(--backgroundBody);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-radius: 60px;
+ }
+ button {
+     border: 0;
+     border-radius: 60px;
+     width: 25%;
+     height: 90px;
+     cursor: pointer;
+ }
+ .loupe{
+     width: 40%;
+     margin-top:10px;
+ }
+ input{
+     padding: 24px 0;
+     text-align: center;
+ }
+ 
+ /* ----------------------burger-------------------- */
+ 
+ .menu-toggle {
+   display: block;
+ }
+ 
+ .nav-list {
+   display: none;
+   flex-direction: column;
+   background: #444;
+   position: absolute;
+   top: 79px;
+   left: 0;
+   width: 100%;
+   text-align: center;
+ }
+ 
+ .nav-list li {
+   margin: 10px 0;
+ }
+ 
+ .nav-list.active {
+   display: flex;
+   transform: translateY(11em);
+   background-color: var(--buttonColor);
+ }
 
 .recipe_of_the_day_landing{
     background-image: url('img/nouille_pic_small.jpg'), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
@@ -124,6 +189,32 @@ header{
     display: none;
 }
 
+
+/* -----------------------------------------FOOTER----------------------------------- */
+
 footer {
-    display: none;
+    display: flex;
+    flex-direction : column; 
+    height: auto;
+}
+
+footer h1 {
+    margin: auto;
+    font-size: 3rem;
+    padding: 0px 30px 0px 0px;
+}
+
+.nav_links_footer {
+    padding: 30px 40px 20px 60px;
+    font-size: 1.4rem;
+    line-height: 3rem;
+    width: 100%;
+}
+
+.links_social_networks a {
+    width: 2em;
+}
+
+footer p {
+    font-size: 1em;
 }

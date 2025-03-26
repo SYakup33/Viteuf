@@ -11,36 +11,49 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="_variables.css">
+    <link rel="stylesheet"  href="indexsmallscreen.css" media="screen and (max-width: 992px)">
+    <link rel="stylesheet" href="indexbigscreen.css" media="screen and (min-width: 992px)">
     <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="login_smallscreen.css" media="screen and (max-width: 992px)">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="login_smallscreen.css" media="screen and (max-width: 992px)">
     <link rel="icon" type="image/x-icon" href="img/Viteuf_favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chango&family=Dela+Gothic+One&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chango&family=Dela+Gothic+One&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">    <link rel="icon" type="image/x-icon" href="img/Viteuf_favicon.png">
     <title>Viteuf -- Les Recettes du Midi</title>
 </head>
 
 <body>
     <header>
         <div id="logobar">
-            <a href="index.html">
-                <h1>Viteuf</h1>
-            </a>
+            <nav class="burger_menu">
+                <div class="menu-toggle" id="mobile-menu">
+                    ☰
+                </div>
+                <ul class="nav-list">
+                    <li><a href="#">Recettes</a></li>
+                    <li><a href="recipe_of_the_day.html">Plat du Jour</a></li>
+                    <li><a href="anti-gaspi_page.html">Catégories</a></li>
+                    <li><a href="#">Articles</a></li>
+                    <li><a href="about.html">About us</a></li>
+                </ul>
+            </nav>
+            <a href="index.html"><h1>Viteuf</h1></a>
             <a href="index.html"><img src="img/Viteuf_logo.png" alt="logo de Viteuf" id="viteuf_logo"></a>
-            <a href=""><img src="img/userLog.png" alt="user connection" class="userConnection"></a>
+            <a href="login.html"><img src="img/userLog.png" alt="user connection" class="userConnection" ></a>
+            
         </div>
-        <hr>
+        
+    <hr>
         <nav>
-            <a href="#">Plat du Jour</a>
+            <a href="recipe_of_the_day.html">Plat du Jour</a>
             <a href="#">Recettes</a>
-            <a href="#">Catégories</a>
+            <a href="anti-gaspi_page.html">Catégories</a>
             <a href="#">Articles</a>
-            <a href="#">About us</a>
+            <a href="about.html">About us</a>
         </nav>
     </header>
-
     <main>
         <h2>Accéder à mon compte</h2>
         <form action="" method="post">

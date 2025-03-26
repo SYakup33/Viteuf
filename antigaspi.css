@@ -11,7 +11,7 @@ body {
 }
 
 h1 {
-    font-family: var(--main-font);
+    font-family: var(--title-font);
     font-weight: bold;
     font-size: 40px;
 }
@@ -29,7 +29,10 @@ h3 {
 nav a {
     font-size: larger;
 }
-
+p{
+    font-family: var(--paragraph-font);
+    font-weight: large;
+}
 /* ----------------------------------------------------Header ------------------------------------------------------ */
 
 header {
@@ -41,19 +44,23 @@ header {
     border-bottom: 1px solid black;
 }
 
-header h1 {
+header h1{
     font-size: 56px;
+    margin-top: -27px;
+    margin-bottom: -27px
+    
 }
 
-#logobar {
+#logobar{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 1em 3em;
 }
 
-#viteuf_logo {
+#viteuf_logo{
     width: 8em;
+    margin-right: 14em;
 }
 
 header hr {
@@ -65,6 +72,38 @@ header nav {
     display: flex;
     justify-content: space-evenly;
     margin: 1em auto;
+}
+/* ---------------------------------burger menu ------------------- */
+.burger_menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--buttonColor);
+    padding: 11px 20px;
+    border-radius: 50%;
+}
+
+.menu-toggle {
+    font-size: 24px;
+    color: black;
+    cursor: pointer;
+    display: none;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: var(--backgroundBody);
+    font-size: 18px;
+    font-family: --paragraph-font;
 }
 
 main #h1_anti-gaspi {
@@ -127,10 +166,10 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 2fr 1fr;
-    padding-top: 80px;
+    padding-top: 60px;
     padding-bottom: 5px;
     font-family: var(--secondary-font);
-    height: 50%;
+    height: 40vh;
 }
 
 footer a {
@@ -145,9 +184,9 @@ footer a {
     padding: 50px 0px 60px 50px;
     line-height: 1.8rem;
     font-size: 1.2rem;
-}
+} 
 
-.nav_links_footer li:hover {
+.nav_links_footer li:hover{
     font-weight: bold;
 }
 

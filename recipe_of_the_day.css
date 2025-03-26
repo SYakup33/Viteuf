@@ -1,70 +1,3 @@
-* {
-    box-sizing: border-box;
-}
-
-body {
-    max-width: 100vw;
-    margin: 0;
-    line-height: 1.6;
-    letter-spacing: .1rem;
-    background-color: var(--backgroundBody);
-}
-
-h1 {
-    font-family: var(--main-font);
-    font-weight: bold;
-    font-size: 40px;
-}
-
-h2 {
-    font-family: var(--main-font);
-    font-weight: bold;
-    font-size: 28px;
-}
-
-h3 {
-    font-family: var(--secondary-font);
-    font-size: larger;
-}
-
-nav a {
-    font-size: larger;
-}
-
-header {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    background-color: var(--backgroundBody);
-    border-bottom: 1px solid black;
-}
-
-header h1{
-    font-size: 56px;
-}
-
-#logobar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 1em 3em;
-}
-
-#viteuf_logo{
-    width: 8em;
-}
-
-header hr {
-    width: 90%;
-    margin: auto;
-}
-
-header nav {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 1em auto;
-}
-
 .recipe_of_the_day_landing{
     background-image: url('img/nouille_pic.jpg'), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     background-size: cover; /* Pour couvrir tout le conteneur */
@@ -184,7 +117,7 @@ header nav {
 }
 
 .card-body{
-    height: 500px;
+    height: auto;
 }
 
 .card-body p:first-child{
@@ -233,15 +166,18 @@ header nav {
 .carousel-indicators .active{
     opacity: 1;
 }
+/* ----------------------------FOOTER------------------------------------------------------------- */
+
 footer {
     background-color: var(--buttonColor);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 2fr 1fr;
-    padding-top: 80px;
+    padding-top: 60px;
     padding-bottom: 5px;
     font-family: var(--secondary-font);
-    height: 50%;
+    height: 40vh;
+    margin-top: 50px
 }
 
 footer a {
@@ -287,8 +223,4 @@ footer p {
 #logo_copyright {
     width: 1.5em;
     padding: 0px 5px;
-}
-
-footer h1 {
-    padding-left: 3em
 }

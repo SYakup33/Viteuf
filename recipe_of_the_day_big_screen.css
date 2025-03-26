@@ -1,0 +1,8 @@
+.small-search-bar, 
+.slideshow-container, 
+.about_what_slider, 
+#about_who_smallscreen, 
+#team_smallscreen,
+.burger_menu{
+    display: none;
+}
