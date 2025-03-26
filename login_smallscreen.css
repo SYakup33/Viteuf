@@ -1,3 +1,75 @@
+header nav,
+  hr,
+  .userConnection,
+   .search-bar,
+    #categories,
+      #about_what,
+       #about_who{
+    display: none
+}
+
+
+#logobar{
+   flex-direction: column-reverse;
+}
+#viteuf_logo{
+    margin-right: 0;
+}
+.container{
+    min-height: 50vh;
+}
+.small-search-bar{
+    width: 100%;
+    max-width: 345px;
+    background: var(--backgroundBody);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 60px;
+}
+button {
+    border: 0;
+    border-radius: 60px;
+    width: 25%;
+    height: 90px;
+    cursor: pointer;
+}
+.loupe{
+    width: 40%;
+    margin-top:10px;
+}
+input{
+    padding: 24px 0;
+    text-align: center;
+}
+
+/* ----------------------burger-------------------- */
+
+.menu-toggle {
+  display: block;
+}
+
+.nav-list {
+  display: none;
+  flex-direction: column;
+  background: #444;
+  position: absolute;
+  top: 79px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.nav-list li {
+  margin: 10px 0;
+}
+
+.nav-list.active {
+  display: flex;
+  transform: translateY(11em);
+  background-color: var(--buttonColor);
+}
+
 footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
