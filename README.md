@@ -1,10 +1,10 @@
-Viteuf - Site de Restauration Rapide
+# Viteuf - Site de Restauration Rapide
 
-Description
+## Description
 
 Viteuf est un site de restauration rapide conçu pour les personnes pressées, notamment pendant la pause déjeuner. Il propose des plats prêts en 10 à 15 minutes avec différentes catégories de recettes adaptées à tous les goûts et besoins.
 
-Fonctionnalités principales
+## Fonctionnalités principales
 
 Plat du jour : Découvrez une nouvelle suggestion chaque jour.
 
@@ -18,28 +18,28 @@ Rapidos : Des repas express prêts en un clin d'œil.
 
 Création de Compte : Les utilisateurs peuvent s'inscrire et gérer leur profil pour sauvegarder leurs recettes favorites.
 
-Équipe du Projet
+## Équipe du Projet
 
-Simon
+- Simon
 
-Thomas
+* Thomas
 
-Yakup
++ Yakup
 
-Objectif
+## Objectif
 
 Faciliter l'accès à des repas rapides et pratiques, tout en luttant contre le gaspillage alimentaire grâce à des recettes adaptées.
 
-Installation
+## Installation
 
 git clone git@github.com:S1mon-G/Viteuf.git
 
-Technologies Utilisées
+## Technologies Utilisées
 
-HTML / CSS
+- HTML / CSS
 
-JavaScript
+* JavaScript
 
-Bootstrap
++ Bootstrap
 
-Bon appétit avec Viteuf ! 🍽️
+## Bon appétit avec Viteuf ! 🍽️
