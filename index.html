@@ -30,10 +30,8 @@
                     ☰
                 </div>
                 <ul class="nav-list">
-                    <li><a href="#">Recettes</a></li>
                     <li><a href="recipe_of_the_day.html">Plat du Jour</a></li>
-                    <li><a href="anti-gaspi_page.html">Catégories</a></li>
-                    <li><a href="#">Articles</a></li>
+                    <li><a href="#mood">Catégories</a></li>
                     <li><a href="about.html">About us</a></li>
                 </ul>
             </nav>
@@ -42,26 +40,24 @@
             <a href="login.html"><img src="img/userLog.png" alt="user connection" class="userConnection" ></a>
             
         </div>
-        
+       
     <hr>
         <nav>
             <a href="recipe_of_the_day.html">Plat du Jour</a>
-            <a href="#">Recettes</a>
-            <a href="anti-gaspi_page.html">Catégories</a>
-            <a href="#">Articles</a>
+            <a href="#mood">Catégories</a>
             <a href="about.html">About us</a>
         </nav>
     </header>
 
     <div class="container">
-        <form action="anti-gaspi_page.html" class="search-bar">
-            <input type="text" placeholder="Pâtes carbo" name="q">
+        <form class="search-bar" onsubmit="return searchPage()" >
+            <input type="text" placeholder="Pâtes carbo" name="q" id="searchInput">
             <button type="submit">Rechercher</button>
         </form>
 
-        <form action="anti-gaspi_page.html" class="small-search-bar">
-            <input type="text" placeholder="Pâtes carbo" name="q">
-            <button type="submit"><img src="img/mag_icon.png" alt="image d'une loupe" class="loupe"></button>
+        <form class="small-search-bar"  onsubmit="return searchSmallPage()">
+            <input type="text" placeholder="Pâtes carbo" name="q" id="smallSearchInput">
+            <button type="submit"><img src="img/mag_icon.png" alt="image d'une loupe" class="loupe" ></button>
         </form>
     </div>
     
@@ -76,8 +72,8 @@
                 <img src="img/nouille_pic.jpg" alt="Photo d'un plat de nouilles" id="nouille_pic">
             </div>
         </section>
-
-    <main>
+    
+        <main>
        
         <h1 id="mood">C'est quoi le mood?</h1>
         
@@ -198,8 +194,7 @@
         </ul>
 
         <div class="links_social_networks">
-            <a href="https://www.instagram.com/"><img src="img/insta_icon.png" alt="logo d'instagram"
-                    class="social_logo"></a>
+            <a href="https://www.instagram.com/"><img src="img/insta_icon.png" alt="logo d'instagram" class="social_logo"></a>
             <a href="https://www.facebook.fr"><img src="img/fb_icon.png" alt="logo de facebook" class="social_logo"></a>
             <a href="https://www.tiktok.com/fr/"><img src="img/tik_icon.png" alt="logo de tiktok" class="social_logo"></a>
         </div>
