@@ -395,3 +395,17 @@ footer p {
 footer h1 {
     padding-left: 3em
 }
+
+#workinprogress{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#map{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
