@@ -54,14 +54,14 @@
     </header>
 
     <div class="container">
-        <form action="anti-gaspi_page.html" class="search-bar">
-            <input type="text" placeholder="Pâtes carbo" name="q">
+        <form class="search-bar" onsubmit="return searchPage()" >
+            <input type="text" placeholder="Pâtes carbo" name="q" id="searchInput">
             <button type="submit">Rechercher</button>
         </form>
 
-        <form action="anti-gaspi_page.html" class="small-search-bar">
-            <input type="text" placeholder="Pâtes carbo" name="q">
-            <button type="submit"><img src="img/mag_icon.png" alt="image d'une loupe" class="loupe"></button>
+        <form class="small-search-bar"  onsubmit="return searchSmallPage()">
+            <input type="text" placeholder="Pâtes carbo" name="q" id="smallSearchInput">
+            <button type="submit"><img src="img/mag_icon.png" alt="image d'une loupe" class="loupe" ></button>
         </form>
     </div>
     
@@ -198,8 +198,7 @@
         </ul>
 
         <div class="links_social_networks">
-            <a href="https://www.instagram.com/"><img src="img/insta_icon.png" alt="logo d'instagram"
-                    class="social_logo"></a>
+            <a href="https://www.instagram.com/"><img src="img/insta_icon.png" alt="logo d'instagram" class="social_logo"></a>
             <a href="https://www.facebook.fr"><img src="img/fb_icon.png" alt="logo de facebook" class="social_logo"></a>
             <a href="https://www.tiktok.com/fr/"><img src="img/tik_icon.png" alt="logo de tiktok" class="social_logo"></a>
         </div>

@@ -317,6 +317,7 @@ main>h1 {
     flex-direction: column;
     align-items: center;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 #team_smallscreen{
@@ -348,6 +349,7 @@ footer {
     padding-bottom: 5px;
     font-family: var(--secondary-font);
     height: 40vh;
+    margin-top: 50px
 }
 
 footer a {
@@ -393,10 +395,6 @@ footer p {
 #logo_copyright {
     width: 1.5em;
     padding: 0px 5px;
-}
-
-footer h1 {
-    padding-left: 3em
 }
 
 
