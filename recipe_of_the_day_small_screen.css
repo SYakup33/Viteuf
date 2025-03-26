@@ -1,0 +1,129 @@
+body {
+    margin: auto;
+}
+header{
+    display: none;
+}
+
+.recipe_of_the_day_landing{
+    background-image: url('img/nouille_pic_small.jpg'), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    height: 60vh;
+}
+
+.recipe_of_the_day_landing_h1{
+    font-size: 7vw;
+}
+
+.recipe_of_the_day_biography_title{
+    margin-top: 1em;
+    width: 80vw;
+}
+
+.recipe_of_the_day_biography_title h2{
+    font-size: large;
+}
+
+.recipe_of_the_day_biography_title h3{
+    font-size: large;
+}
+
+
+.recipe_of_the_day_biography_story{
+    display: block; 
+}
+
+.recipe_of_the_day_biography_story img {
+    display: block;
+    margin: auto; 
+    max-width: 65%;
+    margin-bottom: 1em;
+}
+
+.recipe_of_the_day_biography_story p {
+    display: block;
+    margin: auto; 
+    width: 90%; 
+}
+
+.recipe_of_the_day_biography hr{
+    display: block;
+    height: 2px;
+	background-color: black;
+    max-width: 100%;
+    margin: auto;
+    margin-bottom: 1em;
+}
+
+.recipe_of_the_day_biography_footer_p{
+    font-weight: 700;
+}
+
+.recipe_ingredients{
+    margin-bottom: 0.5em;
+}
+
+
+.recipe_ingredients_h3{
+    font-size: 1.5rem;
+    margin-bottom: 0.5em;
+    width: 35%;
+}
+
+.recipe_ingredients img{
+    height: 30px;
+}
+
+.recipe_ingredients_ul{
+    display: block;
+    margin-left: 3em;
+}
+
+.recipe_ingredients_h3:nth-of-type(2) {
+    width: 80%;
+    font-size: 1.4rem;
+}
+
+.recipe_ingredients_ul li::marker {
+    font-size: 1em;
+}
+
+.carousel-item{
+    display: block;
+    position: inherit;
+    float: none;
+    margin: 1em 0;
+}
+
+.card-body{
+    background-color: var(--backgroundBody);
+    height: auto;
+}
+
+.card-body p:nth-of-type(2){
+    margin: 1em 0;
+}
+
+.card3-desktop{
+    display: none;
+}
+
+.card3-small{
+    display: flex;
+    height: auto;
+}
+
+.card3-small img:nth-of-type(1){
+    margin-bottom: 1em;
+}
+
+.card3-small .card-body{
+    height: auto;
+}
+
+.carousel-indicators{
+    display: none;
+}
+
+footer {
+    display: none;
+}
