@@ -71,7 +71,7 @@ input{
   background-color: var(--buttonColor);
 }
 
-main #anti-gaspi_receipes_selection  {
+main #anti-gaspi_receipes_selection {
     display: flex;
     flex-direction: column;
 }
