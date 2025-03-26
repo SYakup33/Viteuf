@@ -8,6 +8,13 @@ main {
 main input {
     background-color: var(--buttonTextColor);
     border-radius: 20px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+main input::placeholder {
+    font-weight: 600;
+    font-family: var(--secondary-font);
+    opacity: none;
 }
 
 main h2 {
@@ -48,4 +55,64 @@ main button {
     margin: auto;
     height: 10vh;
     width: 200px;
+}
+
+footer {
+    background-color: var(--buttonColor);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    padding-top: 60px;
+    padding-bottom: 5px;
+    font-family: var(--secondary-font);
+    height: 40vh;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav_links_footer {
+    padding: 50px 0px 60px 50px;
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+} 
+
+.nav_links_footer li:hover{
+    font-weight: bold;
+}
+
+.links_social_networks {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    gap: 15px;
+}
+
+.links_social_networks a {
+    height: 50px;
+    width: 50px;
+}
+
+.social_logo:hover {
+    transform: scale(1.1);
+}
+
+footer p {
+    grid-column: 1/4;
+    text-align: center;
+    margin: auto;
+}
+
+#logo_copyright {
+    width: 1.5em;
+    padding: 0px 5px;
+}
+
+footer h1 {
+    padding-left: 3em
 }

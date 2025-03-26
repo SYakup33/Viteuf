@@ -1,5 +1,3 @@
-// ---------------carousel------------------------
-
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -30,7 +28,6 @@ function showSlides(n) {
 } 
 
 // -----------------------carousel about what----------------------------
-
 let otherSlideIndex = 1;
 showOtherSlides(otherSlideIndex);
 
@@ -41,6 +38,7 @@ function plusOtherSlides(n) {
 function currentOtherSlide(n) {
   showOtherSlides(otherSlideIndex = n);
 }
+
 function showOtherSlides(n) {
   let i;
   let slides = document.getElementsByClassName("slider_card");
@@ -56,18 +54,6 @@ function showOtherSlides(n) {
   slides[otherSlideIndex-1].style.display = "block";
   dots[otherSlideIndex-1].className += " active";
 } 
-
-
-// --------------------------------burger menu-----------------------------------------
-
-
-
-const menuToggle = document.getElementById("mobile-menu");
-const navList = document.querySelector(".nav-list");
-
-menuToggle.addEventListener("click", () => {
-    navList.classList.toggle("active");
-});
 
 // ----------------------searchbar-------------------------------------------------------
 
