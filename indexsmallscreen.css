@@ -1,0 +1,232 @@
+header nav,
+  hr,
+  .userConnection,
+   .search-bar,
+    #categories,
+      #about_what,
+       #about_who{
+    display: none
+}
+
+
+#logobar{
+   flex-direction: column-reverse;
+}
+#viteuf_logo{
+    margin-right: 0;
+}
+.container{
+    min-height: 50vh;
+}
+.small-search-bar{
+    width: 100%;
+    max-width: 345px;
+    background: var(--backgroundBody);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 60px;
+}
+button {
+    border: 0;
+    border-radius: 60px;
+    width: 25%;
+    height: 90px;
+    cursor: pointer;
+}
+.loupe{
+    width: 40%;
+    margin-top:10px;
+}
+input{
+    padding: 24px 0;
+    text-align: center;
+}
+
+/* ----------------------burger-------------------- */
+
+.menu-toggle {
+  display: block;
+}
+
+.nav-list {
+  display: none;
+  flex-direction: column;
+  background: #444;
+  position: absolute;
+  top: 79px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.nav-list li {
+  margin: 10px 0;
+}
+
+.nav-list.active {
+  display: flex;
+  transform: translateY(11em);
+  background-color: var(--buttonColor);
+}
+
+
+/* -----------------MOOD-------------------------- */
+
+main>h1{
+    font-size: 6vw;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  justify-content: center;
+}
+
+.mySlides {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+} buttons{
+    width: 50%;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 4s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* -----------------PDJ-------------------------- */
+
+#dish {
+    font-size: 20px;
+}
+
+#author {
+    font-size: 9px;
+}
+
+#cat {
+    font-size: 8px;
+    margin-top: 8vw;
+}
+#plat-pic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#nouille_pic{
+    height: 30%;
+}
+
+/* -----------------------------------about what sliders ---------------------------------------------------------*/
+
+
+.about_what_slider{
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  justify-content: center;
+} h1 {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+
+.slider_card {
+    max-width: 300px;
+    max-height: 300px;
+    margin-left: 58px;
+}
+
+.what_prev, .what_next {
+  cursor: pointer;
+  position: absolute;
+  top: 55%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.what_next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.what_prev:hover, .what_next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.what_dot{
+  margin-top: 30px;
+}
+
+/* ------------------------------ABOUT WHO ----------------------------------- */
+
+#smallpic_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#smallscreenpic{
+  width: 450px;
+  height: 450px;
+  margin-top: 25px;
+}

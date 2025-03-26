@@ -11,7 +11,7 @@ body {
 }
 
 h1 {
-    font-family: var(--main-font);
+    font-family: var(--title-font);
     font-weight: bold;
     font-size: 40px;
 }
@@ -29,12 +29,16 @@ h3 {
 nav a {
     font-size: larger;
 }
-
+p{
+    font-family: var(--paragraph-font);
+    font-weight: large;
+}
 /* ----------------------------------------------------Header ------------------------------------------------------ */
 
 header {
     width: 100%;
-    position: fixed;
+    position: sticky;
+    top: 0;
     z-index: 100;
     background-color: var(--backgroundBody);
     border-bottom: 1px solid black;
@@ -42,6 +46,9 @@ header {
 
 header h1{
     font-size: 56px;
+    margin-top: -27px;
+    margin-bottom: -27px
+    
 }
 
 #logobar{
@@ -52,7 +59,8 @@ header h1{
 }
 
 #viteuf_logo{
-    width: 10em;
+    width: 8em;
+    margin-right: 14em;
 }
 
 header hr {
@@ -65,13 +73,55 @@ header nav {
     justify-content: space-evenly;
     margin: 1em auto;
 }
+/* ---------------------------------burger menu ------------------- */
+.burger_menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--buttonColor);
+    padding: 11px 20px;
+    border-radius: 50%;
+}
+
+.menu-toggle {
+    font-size: 24px;
+    color: black;
+    cursor: pointer;
+    display: none;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: var(--backgroundBody);
+    font-size: 18px;
+    font-family: --paragraph-font;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* -------------------------home pic & searchbar------------------------------ */
 
 .container{
     width: 100%;
     min-height: 100vh;
-    background-image: url(img/home_pic.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/home_pic.jpg);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -92,9 +142,6 @@ header nav {
     align-items: center;
     justify-content: center;
     border-radius: 60px;
-    /* border: 5px solid;
-    border-style: inset; mis en com en cas de retour en arrière du client*/
-    margin-top: 11em;
 }
 
 input {
@@ -141,8 +188,7 @@ main>h1 {
     justify-content: center;
     margin: 53px auto;
     font-weight: bold;
-    font-family: var(--main-font);
-    text-decoration: underline;
+    font-family: var(--title-font);
 }
 
 #categories {
@@ -187,11 +233,9 @@ main>h1 {
 }
 
 #plat-du-jour {
-    margin-top: 53px;
     display: flex;
     flex-direction: column;
     margin: 0 10vw;
-    width: 40%;
 }
 
 #dish {
@@ -209,35 +253,89 @@ main>h1 {
 
 #nouille_pic {
     margin-top: 2em;
-    width: 100vw;
-
+    height: 80%;
 }
 
 /*-------------------------------SECTION ABOUT US--------------------------------------------- */
 
-#about {
+#about_what, #about_who{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin: 0 50px;
+}
+
+#about_what{
+    grid-template-rows:  100px 250px 40px ;
+
+}
+#first-title{
+    grid-column: span 3 / span 3;
+    justify-self: center;
+}
+#desc1, #desc2, #desc3, .slider_card{
+    grid-row-start: 2;
+    border: 1px solid black;
+    border-radius: 5%;
+    margin: 0 1em;
+    padding: 1em 1em;
+    text-align: center;
+    place-content: center;
+    box-shadow: 10px 5px 5px var(--buttonColor);
+    
+}
+#second-title{
+    grid-column: span 3 / span 3;
+    justify-self: center;
+}
+#about_who{
+    grid-template-rows:  100px 450px 40px ;
+    
+}
+
+#team-pic{
+    grid-column: span 3 / span 3;
+    justify-self: center;
+    width: 450px;
+    height: 450px;
+    margin-top: 32px
+}
+
+#p1, #p2, #p3{
+    grid-row-start: 4;
+    border: 1px solid black;
+    border-radius: 5%;
+    margin: 0 1em;
+    padding: 1em 1em;
+    text-align: center;
+    place-content: center;
+    box-shadow: 10px 5px 5px var(--buttonColor);
+} 
+
+#about_who_smallscreen{
     display: flex;
     flex-direction: column;
-    margin: 2em auto;
+    align-items: center;
+    margin-top: 50px;
 }
 
-#about h1 {
-    margin: 20px auto;
-    text-decoration: underline;
+#team_smallscreen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
-p {
-    font-family: var(--secondary-font);
-    font-size: larger;
-    text-align: left;
-    margin: 2rem auto;
-    max-width: 90ch;
+.team_info_about{
+    border: 1px solid black;
+    border-radius: 8%;
+    margin: 2em 2em;
+    padding: 1em 1em;
+    text-align: center;
+    place-content: center;
+    box-shadow: 10px 5px 5px var(--buttonColor);
 }
 
-#team-pic {
-    width: 40%;
-    margin: 15px auto;
-}
 
 /* ----------------------------FOOTER------------------------------------------------------------- */
 
@@ -250,6 +348,7 @@ footer {
     padding-bottom: 5px;
     font-family: var(--secondary-font);
     height: 50%;
+    margin-top: 10em;
 }
 
 footer a {
