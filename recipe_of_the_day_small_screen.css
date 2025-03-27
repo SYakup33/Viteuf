@@ -79,6 +79,20 @@ header nav,
     font-size: 7vw;
 }
 
+.recipe_of_the_day_biography{
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+.recipe_of_the_day_biography hr{
+    display: block;
+    height: 2px;
+	background-color: black;
+    max-width: 90%;
+    margin: auto;
+    margin-bottom: 2em;
+}
+
 .recipe_of_the_day_biography_title{
     margin-top: 1em;
     width: 80vw;
@@ -108,15 +122,6 @@ header nav,
     display: block;
     margin: auto; 
     width: 90%; 
-}
-
-.recipe_of_the_day_biography hr{
-    display: block;
-    height: 2px;
-	background-color: black;
-    max-width: 100%;
-    margin: auto;
-    margin-bottom: 1em;
 }
 
 .recipe_of_the_day_biography_footer_p{
@@ -156,7 +161,6 @@ header nav,
     display: block;
     position: inherit;
     float: none;
-    margin: 1em 0;
 }
 
 .card-body{
