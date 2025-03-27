@@ -134,7 +134,7 @@ main>h1{
 
 .fade {
   animation-name: fade;
-  animation-duration: 4s;
+  animation-duration: 2s;
 }
 
 @keyframes fade {
