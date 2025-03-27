@@ -15,16 +15,13 @@
     text-decoration: none;
 }
 
-.recipe_of_the_day_biography_title{
-    width: 30%;
-    margin: auto;
+.recipe_of_the_day_biography{
+    margin-top: 3em;
+    margin-bottom: 1em;
 }
 
-.recipe_of_the_day_biography_title p{
-    font-family: var(--secondary-font);
-    color: gray;
-    font-size: large;
-    font-weight: 700;
+.recipe_of_the_day_biography hr{
+    display: none;
 }
 
 .recipe_of_the_day_biography_story{
@@ -48,10 +45,6 @@
     margin: auto;
     font-family: var(--secondary-font);
     color: gray;
-}
-
-.recipe_of_the_day_biography hr{
-    display: none;
 }
 
 .recipe_ingredients_h3{
