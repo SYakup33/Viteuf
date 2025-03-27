@@ -124,10 +124,10 @@ main #anti-gaspi_main_pic {
 
 main #anti-gaspi_receipes_selection {
     display: grid;
+    justify-content: center;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 70px;
-    justify-content: center;
+    row-gap: 70px;
     width: 100%;
     padding: 70px 0px 70px 0px;
 }
@@ -162,6 +162,14 @@ main #anti-gaspi_receipes_selection img {
     height: 70%;
     width: 90%;
 
+}
+
+main #anti-gaspi_receipes_selection #pokebowl {
+    align-items: end;
+}
+
+main #anti-gaspi_receipes_selection #tartetomates {
+    align-items: start;
 }
 
 /* footer */

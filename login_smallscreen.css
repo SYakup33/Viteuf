@@ -47,6 +47,17 @@ header nav,
   background-color: var(--buttonColor);
 }
 
+main label {
+  font-size: 0.8em;
+}
+
+main h2 {
+  font-size: 1.4em;
+}
+
+main form main input {
+  margin: auto;
+}
 
 footer {
     display: flex;
