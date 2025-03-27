@@ -132,6 +132,11 @@ main #anti-gaspi_receipes_selection {
     padding: 70px 0px 70px 0px;
 }
 
+main #anti-gaspi_receipes_selection a {
+    display: flex;    
+    justify-content: center;
+}
+
 main #anti-gaspi_receipes_selection button {
     height: 100%;
     width: 70%;
